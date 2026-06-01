@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VyapaarSetu - Grow your B2B business digitally. Build your online presence, reach more buyers, and scale with ease.">
+<title>VyapaarSetu - Digital Growth for B2B Businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #16A34A;
+  --primary-dark: #15803D;
+  --primary-light: #4ADE80;
+  --secondary: #0D9488;
+  --dark: #0F172A;
+  --light: #F8FAFC;
+  --text: #1F2937;
+  --text-muted: #6B7280;
+  --border: #E5E7EB;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ──── HEADER ──── */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo span {
+  color: var(--text);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text);
+  border-radius: 2px;
+}
+
+/* ──── HERO ──── */
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.hero-content h1 .highlight {
+  color: var(--primary);
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ──── SECTION COMMON ──── */
+section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.section-header p {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ──── FEATURES ──── */
+.features {
+  background-color: var(--light);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.feature-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 12px 36px rgba(22, 163, 74, 0.15);
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--dark);
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ──── SOLUTIONS ──── */
+.solutions {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.solutions .section-header h2,
+.solutions .section-header p {
+  color: var(--white);
+}
+
+.solutions .section-header p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.solution-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.solution-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary-light);
+  transform: translateY(-4px);
+}
+
+.solution-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.solution-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+}
+
+.solution-card .icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* ──── HOW IT WORKS ──── */
+.how-it-works {
+  background-color: var(--light);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 16px;
+}
+
+.step h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.step p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.step::after {
+  content: "→";
+  position: absolute;
+  right: -32px;
+  top: 25px;
+  font-size: 28px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+/* ──── BENEFITS ──── */
+.benefits {
+  background-color: var(--white);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 16px;
+}
+
+.benefit-icon {
+  font-size: 32px;
+  min-width: 40px;
+}
+
+.benefit-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.benefit-item p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ──── TESTIMONIALS ──── */
+.testimonials {
+  background-color: var(--light);
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.testimonial {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.stars {
+  color: #FDB022;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.author-role {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ──── CTA ──── */
+.cta {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin: 80px 0;
+}
+
+.cta h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 16px;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.cta .btn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.cta .btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ──── FOOTER ──── */
+footer {
+  background-color: var(--dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 60px 0 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand h3 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.footer-brand h3 span {
+  color: var(--primary-light);
+}
+
+.footer-brand p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-col h4 {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover {
+  color: var(--white);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+}
+
+/* ──── MODAL ──── */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background-color: var(--white);
+  margin: 5% auto;
+  padding: 32px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.close:hover {
+  color: var(--text);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
+/* ──── RESPONSIVE ──── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--white);
+    padding: 20px;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .features-grid,
+  .benefits-grid,
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step::after {
+    display: none;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    margin: 40px 0;
+    padding: 40px 20px;
+  }
+
+  .cta h2 {
+    font-size: 24px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ────────── HEADER ────────── -->
+<header>
+  <div class="container">
+    <div class="nav-container">
+      <a href="#" class="logo">Vyapaar<span>Setu</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Solutions</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button class="btn btn-primary" onclick="openModal()">Get Started</button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ────────── HERO ────────── -->
+<section class="hero">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+    <div class="hero-content">
+      <h1>Grow Your Business <span class="highlight">Online</span></h1>
+      <p>Build your digital presence, reach more buyers, and manage your business with ease. Join thousands of businesses already scaling on VyapaarSetu.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" onclick="openModal()">Start Free</button>
+        <a href="#how-it-works" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop" alt="Business Growth" />
+    </div>
+  </div>
+</section>
+
+<!-- ────────── FEATURES ────────── -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Everything You Need</h2>
+      <p>Simple, powerful tools designed for businesses like yours</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+      <div class="feature-icon">🌐</div>
+      <h3>Digital Presence Management</h3>
+      <p>
+        Build and maintain your online presence with professional websites,
+        product catalogs, business profiles and ongoing content updates.
+        We manage the technology while you focus on growing your business.
+      </p>
+    </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h3>Product Marketplace</h3>
+        <p>Display your complete catalog with images, descriptions, and pricing. Make it easy for buyers to find and order.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Digital Ordering</h3>
+        <p>Replace manual orders with a simple QR code system. Get instant notifications and manage orders 24/7.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Order Management</h3>
+        <p>Track all orders in one place. Auto-generate invoices, monitor payments, and manage inventory effortlessly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💳</div>
+        <h3>Payment Processing</h3>
+        <p>Accept all payment methods. Secure transactions with instant settlement to your account.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Buyer Network</h3>
+        <p>Connect with retailers, merchants and buyers. Get discovered and access new customer opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── SOLUTIONS ────────── -->
+<section class="solutions">
+  <div class="container">
+    <div class="section-header">
+      <h2>Built for Your Business</h2>
+      <p>Solutions tailored for vendors, suppliers, distributors, and manufacturers</p>
+    </div>
+    <div class="solutions-grid">
+      <div class="solution-card">
+        <div class="icon">🏭</div>
+        <h3>For Manufacturers</h3>
+        <p>Sell directly to retailers and distributors. Expand your market reach without intermediaries. Manage bulk orders efficiently.</p>
+      </div>
+      <div class="solution-card">
+        <div class="icon">📦</div>
+        <h3>For Suppliers</h3>
+        <p>Build trust with buyers through a professional online presence. Connect with more customers and scale your sales.</p>
+      </div>
+      <div class="solution-card">
+        <div class="icon">🚚</div>
+        <h3>For Distributors</h3>
+        <p>Manage multiple customer channels easily. Track orders and payments in real-time across all your buyers.</p>
+      </div>
+      <div class="solution-card">
+        <div class="icon">💼</div>
+        <h3>For Any Business</h3>
+        <p>Whether B2B or wholesale, our platform works for any business model. Simple, flexible, and designed to grow with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── BENEFITS ────────── -->
+<section class="benefits">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Businesses Choose Us</h2>
+      <p>Real benefits that translate to real growth</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>Easy Setup</h3>
+          <p>Get online in hours, not weeks. No technical skills needed. We handle the complexity.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>Affordable Pricing</h3>
+          <p>Pay only for what you use. No hidden fees. Start free and scale as you grow.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>24/7 Support</h3>
+          <p>Dedicated support team ready to help. We're here whenever you need us.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>Buyer Access</h3>
+          <p>Get discovered by retailers and merchants looking for reliable suppliers.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>Secure & Reliable</h3>
+          <p>Bank-level security. 99.9% uptime. Your data is safe with us.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">✓</div>
+        <div>
+          <h3>Growth Partner</h3>
+          <p>We don't just provide tools. We help you succeed and scale your business.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── HOW IT WORKS ──────── -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get Started in 4 Steps</h2>
+      <p>Simple process to launch your online business</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Sign Up</h3>
+        <p>Create your account and verify your business details.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Add Products</h3>
+        <p>Upload your product catalog with images and pricing.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Go Live</h3>
+        <p>Your online store is ready. Start accepting orders.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Scale</h3>
+        <p>Connect with more buyers and grow your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="benefits" id="growth">
+  <div class="container">
+    <div class="section-header">
+      <h2>Business Growth Journey</h2>
+      <p>Helping Gujarat manufacturers, suppliers and SMEs expand into Bangalore through branding, digital presence and business networking.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+      <div>
+        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1200&h=800&fit=crop"
+             style="width:100%;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.12);">
+      </div>
+      <div>
+        <h3 style="font-size:32px;margin-bottom:20px;">From Local Business to Regional Growth</h3>
+        <p style="margin-bottom:16px;">We help businesses build a strong brand, connect with buyers, digitize ordering and expand into new markets.</p>
+        <div style="font-size:18px;line-height:2;">
+          ✓ Branding & Packaging<br>
+          ✓ Business Website & Catalog<br>
+          ✓ Bangalore Buyer Network<br>
+          ✓ Digital Ordering System<br>
+          ✓ Lead Generation & Growth
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ────────── TESTIMONIALS ──────── -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <h2>Success Stories</h2>
+      <p>Real results from real businesses</p>
+    </div>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Switching to VyapaarSetu was a game changer. We went from managing orders via WhatsApp to a professional system. Our sales doubled in 6 months and customer satisfaction improved significantly."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">RK</div>
+          <div class="author-info">
+            <div class="author-name">Rajesh Kumar</div>
+            <div class="author-role">Packaging Supplier</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The platform made it incredibly easy to reach new buyers. Within 3 months, we had 150+ new customers and our order volume tripled. Best investment for our business growth."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SP</div>
+          <div class="author-info">
+            <div class="author-name">Sneha Patel</div>
+            <div class="author-role">Food & Beverage Distributor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── CTA ──────── -->
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>Ready to Grow Your Business?</h2>
+      <p>Join thousands of businesses already scaling online. Start your free trial today.</p>
+      <button class="btn btn-primary" onclick="openModal()">Get Started Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── FOOTER ──────── -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Vyapaar<span>Setu</span></h3>
+        <p>Empowering businesses to grow online. Simple, powerful, accessible to everyone.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#features">Website Builder</a></li>
+          <li><a href="#features">Product Catalog</a></li>
+          <li><a href="#features">Order Management</a></li>
+          <li><a href="#features">Payment Processing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 VyapaarSetu. All rights reserved. Helping businesses grow online.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ────────── MODAL ──────── -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 style="margin-bottom: 24px; color: var(--dark);">Get Started Free</h2>
+    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="business">Business Type</label>
+        <input type="text" id="business" name="business" placeholder="e.g., Supplier, Manufacturer, Distributor" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about your business</label>
+        <textarea id="message" name="message" rows="4" placeholder="What are your current challenges?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// Mobile Navigation
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', function() {
+  navLinks.classList.toggle('active');
+});
+
+// Close menu when link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', function() {
+    navLinks.classList.remove('active');
+  });
+});
+
+// Modal Functions
+const modal = document.getElementById('contactModal');
+
+function openModal() {
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+// Form Submission
+function handleFormSubmit(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const business = document.getElementById('business').value;
+  const message = document.getElementById('message').value;
+  
+  // Log form data (in production, send to backend)
+  console.log({
+    name,
+    email,
+    phone,
+    business,
+    message,
+    timestamp: new Date().toISOString()
+  });
+  
+  // Show success message
+  alert('Thank you! We will contact you shortly.');
+  
+  // Reset form
+  document.getElementById('contactForm').reset();
+  
+  // Close modal
+  closeModal();
+}
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Scroll-based header shadow
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('header');
+  if (window.scrollY > 0) {
+    header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+  } else {
+    header.style.boxShadow = '0 1px 3px rgba(0,0,0,0.05)';
+  }
+});
+</script>
+
+</body>
+</html>
